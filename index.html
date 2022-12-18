@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Project Name</title>
+     <title>DOM Play</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/forms.css">
+  <style>
+    .hamlet{
+      /*background-color:yellow;*/
+    }
+
+    #play span{
+     /* background-color:blue;*/
+    }
+
+
+  </style>
  </head>
  <body>
      <header>
@@ -22,9 +33,20 @@
      </header>
      
    <main class="wrapper">  
-       <h2 class="subheader">Project Name</h2>
-       
-        <p> Clever Content Goes here</p>
+       <h2 class="subheader">DOM Play</h2>
+       <div id="play">
+          <p> <span data-actor="hostess">Hostess: Good afternoon, gentlemen.</span></p>
+          <p><span data-actor="lee">Lee: Hello.</span></p>
+          <p><span data-actor="carter">Carter: How you doin'?</span></p>
+          <p><span data-actor="lee">Lee: My friend is on vacation, from America. 
+            I want to show him a good time.</span></p>
+          <p><span data-actor="hostess">Hostess: Oh, you American?</span></p>
+          <p><span data-actor="carter">Carter: That's right.</span></p>
+          <p><span data-actor="hostess">Hostess: You bring American money?</span></p>
+          <p><span data-actor="carter">Carter: Never leave home without it. Lee, this one's on me.  You save your money. </span></p>
+
+       </div>
+        
      <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
           Abiel Tesfamariam, All Rights Reserved ~ 
